@@ -109,3 +109,7 @@ const scratchData = [
 function findById(items, idNum) {
   return items.find(items => items.id === idNum)
 }
+
+// Validate Object Keys
+
+// START DRILLS 2
