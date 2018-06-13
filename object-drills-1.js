@@ -177,9 +177,10 @@ console.log(charObject);
 
 */
 //
+
 let charObject = [
   {
-    boss:
+    boss: "Dany",
     name: "Tyrion",
     jobTitle: "Drinks and knows things"
   },
@@ -190,27 +191,36 @@ let charObject = [
   },
 
   {
-    boss
+    boss: "Dany",
     name: "Jon Snow",
     jobTitle: "Hero"
   },
 
   {
-    boss
+    boss: "Dany",
     name: "Aria",
     jobTitle: "Pro assassin"
   }
 ];
-   
-for(let property in charObject)
-{
-  if(charObject[property] === true)
-  {
-    console.log(`${jobTitle} ${name} reports to ${boss}.`);
-  }
-  else
-  {
-    console.log(`${jobTitle} ${name} doesn't report to anybody.`);
-  }
+
+let bossFunction = function(arr) {
+  
+    for (i=0; i < arr.length; i++) {
+    
+       for(let property in arr[i]) { 
+    
+
+    if (arr[i].boss === undefined) {
+      console.log(`${arr[i].jobTitle} ${arr[i].name} doesn't report to anybody.`);
+    }
+
+    else {
+      console.log(`${arr[i].jobTitle} ${arr[i].name} reports to ${arr[i].boss}.`);
+    }
+    }
 }
-console.log(charObject);
+}
+bossFunction(charObject);
+
+
+
