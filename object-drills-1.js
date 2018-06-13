@@ -112,7 +112,7 @@ function findById(items, idNum) {
 }
 
 // Validate Object Keys
-*/
+
 // START DRILLS 2
 
 const loaf = {
@@ -125,3 +125,20 @@ const loaf = {
 console.log(`${loaf.flour} ${loaf.water}`);
 console.log(loaf.hydration());
 
+
+// Iterating over an object's properties
+
+const newObject = {
+  foo: 1,
+  bar: "2",
+  fum: [1,2,3],
+  quux: 4,
+  spam: true,
+
+};
+
+for (let key in newObject) {
+  console.log(newObject[key]);
+}
+*/
+//
