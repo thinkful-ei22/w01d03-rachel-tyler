@@ -51,3 +51,18 @@ function personMaker() {
 
     return obj;
   }
+
+//Make student reports
+function makeStudentsReport(data) {
+  
+    let resultSet = [];
+    for(var i =0; i<data.length; i++)
+    {
+      var item = data[i];
+      let result =  `${item.name}: ${item.grade}`;
+      resultSet.push(result);    
+    }
+    
+  return resultSet;
+  }
+  
