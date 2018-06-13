@@ -177,3 +177,40 @@ console.log(charObject);
 
 */
 //
+let charObject = [
+  {
+    boss:
+    name: "Tyrion",
+    jobTitle: "Drinks and knows things"
+  },
+  
+  {
+    name: "Dany",
+    jobTitle: "Conquerer"
+  },
+
+  {
+    boss
+    name: "Jon Snow",
+    jobTitle: "Hero"
+  },
+
+  {
+    boss
+    name: "Aria",
+    jobTitle: "Pro assassin"
+  }
+];
+   
+for(let property in charObject)
+{
+  if(charObject[property] === true)
+  {
+    console.log(`${jobTitle} ${name} reports to ${boss}.`);
+  }
+  else
+  {
+    console.log(`${jobTitle} ${name} doesn't report to anybody.`);
+  }
+}
+console.log(charObject);
