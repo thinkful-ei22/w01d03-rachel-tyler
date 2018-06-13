@@ -1,4 +1,5 @@
 'use strict';
+/*
 //Object creator
 function createMyObject(){
     return {
@@ -107,9 +108,20 @@ const scratchData = [
 ];
 
 function findById(items, idNum) {
-  return items.find(items => items.id === idNum)
+  return items.find(items => items.id === idNum);
 }
 
 // Validate Object Keys
-
+*/
 // START DRILLS 2
+
+const loaf = {
+  flour:300,
+  water:210,
+  hydration: function(){
+    return (this.water / this.flour) * 100;
+  }
+};
+console.log(`${loaf.flour} ${loaf.water}`);
+console.log(loaf.hydration());
+
