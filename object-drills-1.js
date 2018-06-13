@@ -140,7 +140,7 @@ const newObject = {
 for (let key in newObject) {
   console.log(newObject[key]);
 }
-*/
+
 //Arrays in objects
 
 const foodObject = {
@@ -148,3 +148,32 @@ const foodObject = {
 };
 
 console.log(foodObject.meals[3]);
+
+//Arrays of objects
+
+let charObject = [
+      {
+        name: "Tyrion",
+        jobTitle: "Drinks and knows things"
+      },
+      
+      {
+        name: "Dany",
+        jobTitle: "Conquerer"
+      },
+
+      {
+        name: "Jon Snow",
+        jobTitle: "Hero"
+      },
+
+      {
+        name: "Aria",
+        jobTitle: "Pro assassin"
+      }
+    ];
+       
+console.log(charObject);
+
+*/
+//
