@@ -102,7 +102,16 @@ const characters = [
 
 //  use .find() to retrieve aragorn character and then call the describe method inside the aragorn character
 
+let aragorn = characters.find((obj) => obj.nickname === 'aragorn');
+
+aragorn.describe();
+
 //  use .filter to create new array characters race hobbit
 
+let hobs = characters.filter((item) => item.race === 'Hobbit');
+
 //  use .filter to create new array characters attack value >5
+
+let greaterThanFive = characters.filter((item) => item.attack > 5);
+console.log(greaterThanFive);
 
